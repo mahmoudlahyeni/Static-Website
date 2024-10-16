@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    /* Includes padding and border in the element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #4a90e2;
+}
+
+/* Float Example */
+.float-container {
+    overflow: hidden;
+    /* Clearfix for floats */
+    margin-bottom: 20px;
+}
+
+.float-item {
+    float: left;
+    width: 45%;
+    background-color: #f0f8ff;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.clear-float {
+    clear: both;
+}
+
+/* Flexbox Example */
+.flexbox-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.flexbox-item {
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    /* Flex-grow */
+    text-align: center;
+}
+
+/* Grid Example */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    background-color: #fff3e0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Overflow Example */
+.overflow-example {
+    background-color: #ffe0b2;
+    padding: 10px;
+}
+
+.overflow-content {
+    overflow: hidden;
+    /* Prevent overflow */
+    white-space: nowrap;
+    /* Keep content in one line */
+    text-overflow: ellipsis;
+    /* Show ellipsis if content overflows */
+}
+
+/* Display Types */
+.display-types {
+    margin-top: 20px;
+}
+
+.inline {
+    display: inline;
+    background-color: #c8e6c9;
+    padding: 10px;
+    margin: 5px;
+}
+
+.block {
+    display: block;
+    background-color: #ffccbc;
+    padding: 10px;
+    margin: 5px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: #bbdefb;
+    padding: 10px;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+}
+
+.about-section {
+    display: block;
+    /* This is the default but included for clarity */
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+}
+
+.contact-info {
+    display: inline-block;
+    /* Use inline-block for alignment */
+    text-align: left;
+}
+
+.contact-item {
+    display: inline-block;
+    /* Each contact item is inline-block */
+    width: 30%;
+    /* Adjust width as needed */
+    margin: 10px;
+    padding: 10px;
+    background-color: #c8e6c9;
+    border-radius: 8px;
+}
+
+.animal-image {
+    width: 400px;
+    /* Set a fixed width */
+    height: 250px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensure the image covers the box while maintaining aspect ratio */
+    border-radius: 8px;
+    /* Optional: for rounded corners */
+}
+
+nav ul li a:hover {
+
+    color: #3210f5;
+    /* Change text color on hover */
+}
+
+nav ul li a:active {
+
+    color: #23c75f;
+    /* Active text color */
+
+}
+
+
+#clicked {
+    color: purple;
+    /* Change color for visited links */
+}
