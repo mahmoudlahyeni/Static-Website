@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /* Includes padding and border in the element's total width and height */
+
 }
 
 body {
@@ -143,7 +143,6 @@ footer {
 
 .about-section {
     display: block;
-    /* This is the default but included for clarity */
     margin: 20px 0;
     padding: 15px;
     background-color: #e0f7fa;
@@ -152,15 +151,13 @@ footer {
 
 .contact-info {
     display: inline-block;
-    /* Use inline-block for alignment */
+
     text-align: left;
 }
 
 .contact-item {
     display: inline-block;
-    /* Each contact item is inline-block */
     width: 30%;
-    /* Adjust width as needed */
     margin: 10px;
     padding: 10px;
     background-color: #c8e6c9;
