@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Kingdom</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Example of using a CSS Library (Bootstrap) -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- WCAG Color Contrast: Ensure contrast ratios meet accessibility standards -->
 </head>
 
 <body>
+
     <header>
         <h1>Welcome to the Animal Kingdom</h1>
         <nav>
@@ -21,22 +27,20 @@
     </header>
 
     <main>
-        <!-- Float Example  -->
+
+        <!-- Float Example -->
         <section class="float-container">
-            <h2> Mammals</h2>
-            <article>Mammals are warm-blooded animals characterized by their fur or hair and the presence of mammary
-                glands that produce milk for their young. They give birth to live young (except for monotremes like the
-                platypus, which lay eggs) and exhibit a wide range of sizes and habitats, from tiny bats to massive
-                whales. Mammals play vital roles in ecosystems, serving as predators, prey, pollinators, and seed
-                dispersers.</article>
+            <h2>Mammals</h2>
+           
+
+            <!-- Advanced CSS Selectors: Using the attribute selector -->
             <div class="float-item">
-                <img src="https://th.bing.com/th/id/OIP.1v1LyOL7jzgNndpyVfDlGAHaFj?rs=1&pid=ImgDetMain" alt="Lion"
-                    class="animal-image">
+                <img src="https://th.bing.com/th/id/OIP.1v1LyOL7jzgNndpyVfDlGAHaFj?rs=1&pid=ImgDetMain"       
+                sizes="(max-width: 480px) 100vw, (max-width: 800px) 50vw, 33vw"  alt="Lion" class="animal-image">
                 <p>Lion</p>
             </div>
             <div class="float-item">
-                <img src="https://th.bing.com/th/id/OIP.X-a3t3aeF084JmlQz1D5tgHaHT?rs=1&pid=ImgDetMain" alt="Elephant"
-                    class="animal-image">
+                <img src="https://th.bing.com/th/id/OIP.X-a3t3aeF084JmlQz1D5tgHaHT?rs=1&pid=ImgDetMain" alt="Elephant" class="animal-image">
                 <p>Elephant</p>
             </div>
             <div class="clear-float">
@@ -44,76 +48,73 @@
             </div>
         </section>
         <h2>Birds</h2>
-        <article>Birds are warm-blooded vertebrates characterized by their feathers, beaks, and lightweight skeletons,
-            which enable flight. They lay eggs and are found in nearly every habitat on Earth, from dense forests to
-            open oceans. Birds possess a unique respiratory system that allows for efficient oxygen exchange, essential
-            for their high-energy lifestyle.</article>
-        <!-- Flexbox Example  -->
+        <!-- Flexbox Example -->
         <section class="flexbox-container">
-
+           
             <div class="flexbox-item">
-                <img src="https://th.bing.com/th/id/OIP.8bu-oVcfXWAYGwCDTsXGkwHaG9?rs=1&pid=ImgDetMain" alt="Eagle"
-                    class="animal-image">
+                <img src="https://th.bing.com/th/id/OIP.8bu-oVcfXWAYGwCDTsXGkwHaG9?rs=1&pid=ImgDetMain" alt="Eagle" class="animal-image">
                 <p>Eagle</p>
             </div>
             <div class="flexbox-item">
-                <img src="https://images.pexels.com/photos/1427447/pexels-photo-1427447.jpeg?cs=srgb&dl=bird-animal-cute-1427447.jpg&fm=jpg"
-                    alt="Parrot" class="animal-image">
+                <img src="https://images.pexels.com/photos/1427447/pexels-photo-1427447.jpeg?cs=srgb&dl=bird-animal-cute-1427447.jpg&fm=jpg" alt="Parrot" class="animal-image">
                 <p>Parrot</p>
             </div>
             <div class="flexbox-item">
-                <img src="https://th.bing.com/th/id/R.1b2c5d2200417fa79ebef75772090016?rik=9cCnwGAF7b%2fXFA&riu=http%3a%2f%2fstatic1.wikia.nocookie.net%2f__cb20120623094937%2fanimals%2fimages%2f2%2f28%2fKing_Penguin_Closeup.jpg&ehk=FHllELQmBJ2M%2b8mi37pVo%2bbwDZzZs3ie20MWDVaX6kA%3d&risl=1&pid=ImgRaw&r=0"
-                    alt="Penguin" class="animal-image">
+                <img src="https://th.bing.com/th/id/R.1b2c5d2200417fa79ebef75772090016?rik=9cCnwGAF7b%2fXFA&riu=http%3a%2f%2fstatic1.wikia.nocookie.net%2f__cb20120623094937%2fanimals%2fimages%2f2%2f28%2fKing_Penguin_Closeup.jpg&ehk=FHllELQmBJ2M%2b8mi37pVo%2bbwDZzZs3ie20MWDVaX6kA%3d&risl=1&pid=ImgRaw&r=0" alt="Penguin" class="animal-image">
                 <p>Penguin</p>
             </div>
         </section>
+        
         <h2>Reptiles</h2>
-        <article>Reptiles are cold-blooded vertebrates that include snakes, lizards, turtles, crocodilians, and more.
-            They are characterized by their scaly skin, which helps prevent water loss, making them well-suited for a
-            variety of habitats, including deserts, forests, and aquatic environments. Reptiles lay eggs (though some
-            give birth to live young) and breathe air through lungs. They have a unique way of regulating their body
-            temperature by basking in the sun or seeking shade.</article>
-        <!-- Grid Example  -->
         <section class="grid-container">
-
             <div class="grid-item">
-                <img src="https://th.bing.com/th/id/OIP.SYvVBPkQByfSiav1Ry8q8QHaE8?rs=1&pid=ImgDetMain" alt="Crocodile"
-                    class="animal-image">
+                <img src="https://th.bing.com/th/id/OIP.SYvVBPkQByfSiav1Ry8q8QHaE8?rs=1&pid=ImgDetMain" alt="Crocodile" class="animal-image">
                 <p>Crocodile</p>
             </div>
             <div class="grid-item">
-                <img src="https://images.pexels.com/photos/159758/box-turtle-wildlife-animal-reptile-159758.jpeg?cs=srgb&dl=animal-cute-grass-159758.jpg&fm=jpg"
-                    alt="Turtle" class="animal-image">
+                <img src="https://images.pexels.com/photos/159758/box-turtle-wildlife-animal-reptile-159758.jpeg?cs=srgb&dl=animal-cute-grass-159758.jpg&fm=jpg" alt="Turtle" class="animal-image">
                 <p>Turtle</p>
             </div>
             <div class="grid-item">
-                <img src="https://www.treehugger.com/thmb/ra8W_Aa4ZDo1d8n2R88XTgXl2GI=/5184x3456/filters:fill(auto,1)/panther-chameleon-on-a-branch-916025340-54d6b065053342b8b7b9948c64107eeb.jpg"
-                    alt="Chameleon" class="animal-image">
+                <img src="https://www.treehugger.com/thmb/ra8W_Aa4ZDo1d8n2R88XTgXl2GI=/5184x3456/filters:fill(auto,1)/panther-chameleon-on-a-branch-916025340-54d6b065053342b8b7b9948c64107eeb.jpg" alt="Chameleon" class="animal-image">
                 <p>Chameleon</p>
             </div>
             <div class="grid-item">
-                <img src="https://www.australiangeographic.com.au/wp-content/uploads/2021/03/T34H43-1800x1200.jpg"
-                    alt="Gecko" class="animal-image">
+                <img src="https://www.australiangeographic.com.au/wp-content/uploads/2021/03/T34H43-1800x1200.jpg" alt="Gecko" class="animal-image">
                 <p>Gecko</p>
             </div>
-
         </section>
+        
         <!-- Overflow Example -->
         <section class="overflow-example">
-            <h2> Amphibians</h2>
+            <h2>Amphibians</h2>
             <div class="overflow-content">
-                Frogs and toads are amphibians. They can live both in water and on land.
-                Amphibians usually undergo a metamorphic life cycle. They start as eggs, often laid in water, hatch into
-                larvae (like tadpoles), and then transform into adult forms that can live on land.
+                Frogs and toads are amphibians. They can live both in water and on land...
             </div>
         </section>
 
+        <!-- Example of FAQ Accordion -->
+        <section class="faq-section">
+            <details>
+                <summary>What is a Mammal?</summary>
+                <p>Mammals are warm-blooded animals...</p>
+            </details>
+            <details>
+                <summary>What is a Reptile?</summary>
+                <p>Reptiles are cold-blooded vertebrates...</p>
+            </details>
+            <details>
+                <summary>What is a Bird?</summary>
+                <p>Birds are warm-blooded vertebrates...</p>
+            </details>
+        </section>
 
     </main>
 
-    <footer>
+    <footer style="position: relative;">
         <p>&copy; 2024 Animal Kingdom. All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>

@@ -1,21 +1,30 @@
+/* General Reset and Box-Sizing */
 * {
     box-sizing: border-box;
-
 }
 
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+h1,h2 {
+    /* Resposive typography */
+    
+    font-size: 5vw;
+}
 
+
+/* Header Styles */
 header {
-    background-color: #4a90e2;
+    background-color: var(--primary-color); /* Using CSS Variables */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -27,43 +36,36 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    color:#2336c7;
+    transition: color 0.5s ease-in-out, text-decoration 0.4s ease-in-out; /* Clearer, more noticeable transition */
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #555; /* Change color on hover for a clearer effect */
 }
 
-main {
-    padding: 20px;
+nav ul li a:active {
+    color: var(--accent-color); /* Active state */
 }
 
-h2 {
-    color: #4a90e2;
+/* For the clicked state */
+#clicked {
+    color: purple;
+    transition: color 0.5s ease-in-out; /* Smooth transition for color change */
+}
+/* Responsive Layout - CSS Media Queries */
+@media (max-width: 600px) {
+    .flexbox-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .animal-image {
+        width: 100%;
+    }
 }
 
-/* Float Example */
-.float-container {
-    overflow: hidden;
-    /* Clearfix for floats */
-    margin-bottom: 20px;
-}
-
-.float-item {
-    float: left;
-    width: 45%;
-    background-color: #f0f8ff;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-}
-
-.clear-float {
-    clear: both;
-}
-
-/* Flexbox Example */
+/* Flexbox Container */
 .flexbox-container {
     display: flex;
     justify-content: space-between;
@@ -75,11 +77,10 @@ h2 {
     padding: 20px;
     margin: 10px;
     flex: 1;
-    /* Flex-grow */
     text-align: center;
 }
 
-/* Grid Example */
+/* Grid Layout */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -93,7 +94,26 @@ h2 {
     text-align: center;
 }
 
-/* Overflow Example */
+/* Floating and Clearing */
+.float-container {
+    overflow: hidden; /* Clearfix for floats */
+    margin-bottom: 20px;
+}
+
+.float-item {
+    float: left;
+    width: 45%;
+    background-color: var(--highlight-color);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.clear-float {
+    clear: both;
+}
+
+/* Overflow Content */
 .overflow-example {
     background-color: #b2b7ff;
     padding: 10px;
@@ -101,95 +121,98 @@ h2 {
 
 .overflow-content {
     overflow: hidden;
-    /* Prevent overflow */
     white-space: nowrap;
-    /* Keep content in one line */
     text-overflow: ellipsis;
-    /* Show ellipsis if content overflows */
 }
 
-/* Display Types */
-.display-types {
-    margin-top: 20px;
-}
-
-.inline {
-    display: inline;
-    background-color: #c8e6c9;
+/* FAQ Section */
+.faq-section details {
+    background-color: #f0f0f0;
     padding: 10px;
-    margin: 5px;
+    margin-bottom: 5px;
 }
 
-.block {
-    display: block;
-    background-color: #ffccbc;
-    padding: 10px;
-    margin: 5px;
+/* Flexible Image */
+.animal-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.inline-block {
-    display: inline-block;
-    background-color: #bbdefb;
-    padding: 10px;
-    margin: 5px;
-}
-
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4a90e2;
+    background-color: var(--primary-color);
     color: white;
 }
 
-.about-section {
-    display: block;
-    margin: 20px 0;
-    padding: 15px;
-    background-color: #e0f7fa;
-    border-radius: 8px;
+/* Advanced CSS Selectors */
+nav ul li a[href^="index.html"] { /* Starts with */
+    color: #0e1bd673;
 }
 
-.contact-info {
-    display: inline-block;
-
-    text-align: left;
+.float-item img[alt="Lion"] { /* Attribute Selector */
+    border: 2px solid rgb(191, 255, 0);
 }
 
-.contact-item {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
+/* CSS Variables */
+:root {
+    --primary-color: #12046e;
+    --highlight-color: #f0f8ff;
+    --accent-color: #2336c7;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply the fade-in animation to all images */
+img {
+    animation: fadeIn 1s ease-in-out;
+}
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 15px; /* Space between items */
+    margin-bottom: 20px; /* Space below the grid */
+}
+
+/* Individual Grid Item */
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light background for the items */
     padding: 10px;
-    background-color: #c8e6c9;
-    border-radius: 8px;
+    text-align: center; /* Center text under images */
 }
 
+/* Image Style */
 .animal-image {
-    width: 400px;
-    /* Set a fixed width */
-    height: 250px;
-    /* Set a fixed height */
-    object-fit: cover;
-    /* Ensure the image covers the box while maintaining aspect ratio */
-    border-radius: 8px;
-    /* Optional: for rounded corners */
+    width: 100%;
+    
+    object-fit: cover; /* Ensures the images cover their container while maintaining aspect ratio */
+    border-radius: 8px; /* Rounded corners on images */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
 }
 
-nav ul li a:hover {
-
-    color: #3210f5;
-    /* Change text color on hover */
+/* Hover Effect */
+.grid-item:hover .animal-image {
+    transform: scale(1.05); /* Zoom effect on hover */
 }
 
-nav ul li a:active {
-
-    color: #23c75f;
-    /* Active text color */
-
-}
-
-
-#clicked {
-    color: purple;
-    /* Change color for visited links */
+/* Text Styling for the Caption */
+.grid-item p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
 }
