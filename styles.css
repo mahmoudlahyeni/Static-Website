@@ -216,3 +216,57 @@ img {
     font-weight: bold;
     color: #333;
 }
+
+footer::before {
+    content: "🐾 ";
+    font-size: 20px;
+}
+/* Gallery Container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto-fit the grid items */
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Gallery Item */
+.gallery-item {
+    text-align: center;
+    background-color: #f0f8ff; /* Light background for each image */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Gallery Image */
+.gallery-image {
+    width: 100%; /* Make image flexible */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    object-fit: cover; /* Ensure the image covers the area while keeping aspect ratio */
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Gallery Item Text */
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Responsive Styles (for mobile & tablet screens) */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr; /* Stack images in one column on very small screens */
+    }
+}
